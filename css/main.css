@@ -40,3 +40,12 @@ html body {
 .github-link {
     border-bottom: 1px solid #bebebe;
 }
+
+@media screen and (max-width: 1200px) {
+    .project-card {
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+}
