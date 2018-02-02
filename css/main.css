@@ -34,7 +34,14 @@ html body {
 
 .footer {
     max-height: 200px;
-    padding: 25px !important;
+    padding: 15px !important;
+	bottom: 0px;
+	position: sticky;
+	width: 100%;
+}
+
+#content {
+	padding-bottom: 50px;
 }
 
 .github-link {
