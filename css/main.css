@@ -33,14 +33,15 @@ html body {
 
 .footer {
     max-height: 200px;
-    padding: 15px !important;
-	bottom: 0px;
-	position: fixed;
-	width: 100%;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
 }
 
 #content {
-	padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .github-link {
@@ -49,10 +50,11 @@ html body {
 
 @media screen and (max-width: 1200px) {
     .project-card {
-        margin: 0px !important;
+        margin: 0 auto !important;
         margin-bottom: 10px !important;
-        padding-right: 0px !important;
-        padding-left: 0px !important;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        width: 100% !important;
     }
 
     .more-info {
