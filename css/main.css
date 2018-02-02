@@ -35,7 +35,7 @@ html body {
     max-height: 200px;
     padding: 15px !important;
 	bottom: 0px;
-	position: sticky;
+	position: fixed;
 	width: 100%;
 }
 
