@@ -48,6 +48,11 @@ html body {
     border-bottom: 1px solid #bebebe;
 }
 
+.badge-ts {
+    background: #2b7489 !important;
+    text-transform: none !important;
+}
+
 @media screen and (max-width: 1200px) {
     .project-card {
         margin: 0 auto !important;
