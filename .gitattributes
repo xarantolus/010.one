@@ -3,4 +3,4 @@ css/* linguist-vendored
 js/* linguist-vendored
 
 # main.css not extern
-css/main.css
+css/main.css linguist-vendored=false
