@@ -13,9 +13,8 @@ html body {
 
 .more-info {
     cursor: help;
-    font-weight: 500;
     border-bottom: 1px dotted #bebebe;
-    color: #cccccc;
+    color: white;
 }
 
     .more-info:hover {
@@ -54,5 +53,9 @@ html body {
         margin-bottom: 10px !important;
         padding-right: 0px !important;
         padding-left: 0px !important;
+    }
+
+    .more-info {
+        border-bottom: none;
     }
 }
