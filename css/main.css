@@ -55,11 +55,9 @@ html body {
 
 @media screen and (max-width: 1200px) {
     .project-card {
-        margin: 0 auto !important;
-        margin-bottom: 10px !important;
-        margin-right: 10px !important;
-        margin-left: 10px !important;
-        width: 100% !important;
+	    margin: 0px !important;
+	    padding: 0px !important;
+		margin-bottom: 10px !important;		
     }
 
     .more-info {
