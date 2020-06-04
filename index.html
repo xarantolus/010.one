@@ -23,32 +23,60 @@
                 <div class="text-align">
                     <h2 class="uk-card-title uk-text-bold">About me</h2>
                     <p>I'm a student from Germany that discovered programming in 2012. Ever since then I have been fascinated
-                        by computers and programming. You might be interested in my 
-                        <a href="https://github.com/xarantolus" class="github-link uk-button-text uk-link-reset">GitHub</a> or 
+                        by computers and programming. You might be interested in my
+                        <a href="https://github.com/xarantolus" class="github-link uk-button-text uk-link-reset">GitHub</a> or
                         <a href="https://stackoverflow.com/users/5728357/xarantolus" class="github-link uk-button-text uk-link-reset">Stack Overflow</a> profile
-                        to see my latest published works.</p>
+                        to see my latest published works.
+                    </p>
+
                     <div class="text-align">
                         <h3 class="uk-text-bold">Skills</h3>
                         <ul>
                             <!-- Web -->
                             <li>
                                 <h4 class="uk-padding-remove-top">Web Development</h4>
-                                <p>I like using
-                                    <span class="more-info" title="TypeScript is a superset of JavaScript that compiles to clean JavaScript output.">TypeScript</span>
-                                    &amp;
-                                    <span class="more-info" title="JavaScript runtime for servers.">NodeJS</span> to create web applications.
-                                    <br />This usually includes building a
-                                    <span class="more-info" title="Everything the user can see.">front-end</span>, a
-                                    <span class="more-info" title="Everything that actually happens, e.g. saving files.">back-end</span> &amp; an
+                                <p>I really like using
+                                    <span class="more-info" title="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.">Go</span>
+                                    to build the <span class="more-info" title="Everything that actually happens, e.g. saving files.">back-end</span> of web services.
+                                    Most of them also need a 
+                                    <span class="more-info" title="Everything the user can see.">front-end</span> and an
                                     <span class="more-info" title="Application Programming Interfaces are used for communication between applications.">API</span>.
-                                    <br /> Sometimes I also use
-                                    <span class="more-info" title="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.">Go</span> to build the back-end.
+                                    <br />
+                                    My focus is on a clean user interface that is updated whenever something on the server's side changes.
+                                    This is why I often implement <span class="more-info" title="WebSockets allowing bidirectional communication over a single TCP connection. It is incredibly useful for live events.">WebSocket endpoints</span>
+                                    that provide live events and updates.
+                                    <br>
+
+                                    In the past, I have also used
+                                    <span class="more-info" title="TypeScript is a superset of JavaScript that compiles to clean JavaScript output.">TypeScript</span>
+                                    and
+                                    <span class="more-info" title="JavaScript runtime for servers.">NodeJS</span> to create web applications.
                             </li>
 
+                            <!-- Robots -->
+                            <li>
+                                <h4 class="uk-padding-remove-top">Robotics</h4>
+                                <p>
+                                    I really like robotics, that's why I built <a href="https://github.com/xarantolus/gover">my own rover</a>.
+                                    It can be controlled using all kinds of devices, e.g. via smartphone, PC or XBox controller.
+                                    Combining hardware and software is not just very interesting but also really enjoyable.
+                                </p>
+                            </li>
+
+                            <!-- Cross-platform -->
+                            <li>
+                                <h4 class="uk-padding-remove-top">Cross-platform Applications</h4>
+                                <p>Another thing I like is building applications for the
+                                    <span class="more-info" title="A small and affordable computer that you can use to learn programming.">Raspberry Pi</span>.
+                                    <br /> Examples for these applications are
+                                    <span class="more-info" title="I usually build bots for Twitter or Discord. You can text them and they perform an action.">(Chat-)Bots</span>, Servers, and
+                                    <span class="more-info" title="Programs that search for information. They can for example check if a website changed and message you.">Crawlers</span>.
+                            </li>
+                            
                             <!-- Desktop -->
                             <li>
                                 <h4 class="uk-padding-remove-top">Desktop Applications</h4>
-                                <p>I also like building desktop applications using
+                                <p  class="uk-margin-remove-bottom">I also like building desktop applications using
                                     <span class="more-info" title="General-purpose, object-oriented programming language.">C&#35;</span>
                                     &amp;
                                     <span class="more-info" title="Windows Presentation Foundation. Used to render user interfaces in Windows-based applications.">WPF</span>.
@@ -59,15 +87,6 @@
                                     <span class="more-info" title="Used to get data in a computer-readable format from a server.">APIs</span>.
                             </li>
 
-                            <!-- Cross-platform -->
-                            <li>
-                                <h4 class="uk-padding-remove-top">Cross-platform Applications</h4>
-                                <p class="uk-margin-remove-bottom">Another thing I like is building applications for the
-                                    <span class="more-info" title="A small and affordable computer that you can use to learn programming.">Raspberry Pi</span>.
-                                    <br /> Examples for these applications are
-                                    <span class="more-info" title="I usually build bots for Twitter or Discord. You can text them and they perform an action.">(Chat-)Bots</span>, Servers, and
-                                    <span class="more-info" title="Programs that search for information. They can for example check if a website changed and message you.">Crawlers</span>.
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -75,15 +94,37 @@
 
         </div>
         <!-- Projects -->
-        <h2 class="uk-text-center uk-align-center title uk-text-bold">Projects</h2>
+        <h2 id="Projects" class="uk-text-center uk-align-center title uk-text-bold">Projects</h2>
 
         <div class="uk-grid uk-flex-center uk-child-width-1-4@l uk-child-width-1-1@m">
+
+            <div class="uk-card uk-card-hover project-card uk-card-small uk-card-secondary uk-text-center">
+                <div class="uk-card-badge uk-label badge-go">Go</div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">sensibleHub</h3>
+                    <p>A self-hosted music management server with a web and FTP interface</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="https://github.com/xarantolus/sensibleHub" class="uk-button uk-button-text">See on Github</a>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-hover project-card uk-card-small uk-card-secondary uk-text-center">
+                <div class="uk-card-badge uk-label badge-go">Go</div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">gover</h3>
+                    <p>A web-controlled rover powered by a Raspberry Pi. Can be controlled using different devices</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="https://github.com/xarantolus/gover" class="uk-button uk-button-text">See on Github</a>
+                </div>
+            </div>
 
             <div class="uk-card uk-card-hover project-card uk-card-small uk-card-secondary uk-text-center">
                 <div class="uk-card-badge uk-label badge-ts">TypeScript</div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Collect</h3>
-                    <p>A server to collect & archive websites</p>
+                    <p>A self-hosted server to collect & archive websites</p>
                 </div>
                 <div class="uk-card-footer uk-text-uppercase uk-button">See
                     <a href="Collect/" class="uk-button-text">the website</a> or
