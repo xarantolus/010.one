@@ -55,11 +55,19 @@ html body {
 .badge-ts {
     background: #2b7489 !important;
     text-transform: none !important;
+    color: #fff !important;
 }
 
 .badge-go {
-    background: #375eab !important;
+    background: #35a6c9 !important;
     text-transform: none !important;
+    color: #fff !important;
+}
+
+.badge-csharp {
+    background: #27b86f !important;
+    text-transform: none !important;    
+    color: #fff !important;
 }
 
 .text-align {
