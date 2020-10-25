@@ -2,6 +2,7 @@ html body {
     border: 0;
     overflow-x: hidden;
     background-color: #047d4d;
+    color: white;
 }
 
 #content {
@@ -23,11 +24,9 @@ html body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-    .more-info:hover {
-        border-bottom: 1px solid #cccccc;
-    }
+    max-width: 35%;
+}
 
 .title {
     color: #dddddd;
@@ -37,6 +36,10 @@ html body {
 .project-card {
     margin: 10px !important;
     padding: 10px !important;
+}
+
+.project-card:hover {
+    text-decoration: none;
 }
 
 .footer {
@@ -66,7 +69,13 @@ html body {
 
 .badge-csharp {
     background: #27b86f !important;
-    text-transform: none !important;    
+    text-transform: none !important;
+    color: #fff !important;
+}
+
+.badge-latex {
+    background: #008080 !important;
+    text-transform: none !important;
     color: #fff !important;
 }
 
@@ -82,23 +91,18 @@ html body {
         margin-bottom: 10px !important;
         padding-left: 10px !important;
     }
-
     .more-info {
         border-bottom: none;
     }
-
     .text-align {
-        text-align: center;
+        padding: 0 .5%;
     }
-
     ul {
         list-style: none;
     }
-
     h4 {
         text-decoration: underline #2b7489;
     }
-
     .profile-image-con {
         display: none;
     }
