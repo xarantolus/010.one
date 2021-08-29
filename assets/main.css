@@ -50,3 +50,7 @@ html {
         display: none;
     }
 }
+
+#projects {
+    padding-top: 1em;
+}
