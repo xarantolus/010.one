@@ -37,7 +37,7 @@
     </script>
 </head>
 
-<body class="d-flex h-100 w-100 text-center text-white bg-dark p-3 mx-auto flex-column">
+<body class="d-flex h-100 w-100 text-center text-light bg-dark p-3 mx-auto flex-column">
     <header id="home">
         <div>
             <h3 class="float-md-start mb-0">xarantolus</h3>
@@ -48,7 +48,7 @@
         </div>
     </header>
 
-    <div class="position-relative cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="background-shenenigans">
         <div class="col-md-5 p-lg-5 mx-auto my-5 text-left">
             <h1 class="display-4 fw-normal text-center">Hi, I'm Philipp</h1>
             <p class="lead fw-normal">I'm currently studying computer science. My side projects help me learn the practical stuff as well.
@@ -64,14 +64,7 @@
                 <a class="btn btn-secondary btn-sm" href="https://xarantolus.github.io/blog/">Visit my blog</a>
                 <a class="btn btn-secondary btn-sm" href="https://stackoverflow.com/users/5728357/xarantolus?tab=profile">StackOverflow profile</a>
             </p>
-
-            <p class="lead">And to see all projects I have published, check out my GitHub profile as well.</p>
-            <p class="gap-lg-3 text-center">
-                <a class="btn btn-secondary btn-sm" href="https://github.com/xarantolus">GitHub profile</a>
-            </p>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
 
 
@@ -101,7 +94,7 @@
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Web Archive Server</h2>
-                    <p class="lead">Collect is a self-hosted server for archiving websites.</p>
+                    <p class="lead">Collect is a self-hosted web archive.</p>
                     <p>Your personal web archive that supports downloading normal websites and videos. When a webpage goes offline or is deleted, you can still view it.</p>
                     <p>The server backend is written in <a href="https://www.typescriptlang.org/" class="blendin-link">TypeScript</a>, the front-end is a single-page application written in vanilla JavaScript. It is styled using the <a href="https://getuikit.com/" class="blendin-link">UIkit CSS</a> framework. The server provides live updates via WebSockets, which means that any change will be propagated to all connected clients.</p>
                     <a href="https://github.com/xarantolus/Collect" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
@@ -117,9 +110,9 @@
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Android Customizations</h2>
-                    <p class="lead">backtap makes the fingerprint sensor more useful.</p>
+                    <p class="lead">backtap makes your phone's fingerprint sensor more useful.</p>
                     <p>The <a href="https://github.com/topjohnwu/Magisk" class="blendin-link">Magisk</a> module starts a custom program when booting the Android device. This programs listens for taps on the fingerprint sensor and converts them to clicks on a specific region of the screen.</p>
-                    <p>To write signals to the screen, I needed to know how the Linux multitouch protocol works. I also wrote <a href="https://xarantolus.github.io/blog/how-to-tap-the-android-screen-from-the-underlying-linux-system" class="blendin-link">a blog post</a> with my findings.</p>
+                    <p>To write signals to the screen, I needed to know how the Linux multitouch protocol works. I also wrote a blog post with my findings.</p>
                     <a href="https://github.com/xarantolus/backtap" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                     <a href="https://xarantolus.github.io/blog/how-to-tap-the-android-screen-from-the-underlying-linux-system" type="button" class="btn btn-secondary btn-lg">Read the blog post</a>
                 </div>
@@ -141,8 +134,8 @@
                     <p class="image-hint">A photo of the rover</p>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-2 mb-3">Rover</h2>
-                    <p class="lead">gover is a simple web-controlled rover powered by a Raspberry Pi.</p>
+                    <h2 class="display-5 fw-bold lh-2 mb-3">RC Rover</h2>
+                    <p class="lead">gover is a remote-controlled rover powered by a Raspberry Pi.</p>
 
                     <p>This <a href="https://www.raspberrypi.org/" class="blendin-link">Raspberry Pi</a> powered rover can be controlled either via a keyboard, an Xbox controller or simply tilting a phone. It avoids frontal collisions using the ultrasonic sensor.</p>
                     <p>I learned a lot about electronics, e.g. how to wire and solder the motor controller board. And writing software that actually affects the real world is really cool.</p>
@@ -156,7 +149,7 @@
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Sorting Images</h2>
-                    <p class="lead">ImageSort is a desktop application for sorting images, faster.</p>
+                    <p class="lead">ImageSort is a desktop application for sorting images faster.</p>
                     <p>The application asks you where your images are and where the selected ones should end up. It makes it easy to rotate and thus fix wrongly imported images.</p>
 
                     <a href="https://github.com/xarantolus/ImageSort" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
@@ -164,7 +157,7 @@
                 <hr class="hidden-hr">
                 <div class="col-lg-6 vertical-separator">
                     <h2 class="display-5 fw-bold lh-2 mb-3">File Server</h2>
-                    <p class="lead">upduck is a simple file server.</p>
+                    <p class="lead">upduck makes it easy to share files beyond your local network.</p>
                     <p>It allows instant and secure sharing of files from your network to anyone in the world. It accomplishes that by integrating the dynamic DNS service <a href="https://www.duckdns.org" class="blendin-link">DuckDNS</a> and the <a href="https://letsencrypt.org/" class="blendin-link">Let's Encrypt</a> certificate authority, allowing HTTPS connections.</p>
 
                     <a href="https://github.com/xarantolus/upduck" type="button" class="btn btn-primary btn-lg">GitHub repository</a>

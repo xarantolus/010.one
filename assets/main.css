@@ -32,6 +32,7 @@ html {
 }
 
 .image-hint {
+    margin-top: 1%;
     color: #dddddd;
     text-align: center;
 }
@@ -56,3 +57,8 @@ html {
 .text-left {
     text-align: left;
 }
+
+a.btn {
+    margin-top: .5em;
+}
+
