@@ -58,7 +58,31 @@ html {
     text-align: left;
 }
 
-a.btn {
+a.btn:not(.btn-sm) {
     margin-top: .5em;
 }
 
+.fadein-1s {
+    animation: 1s delayedFadeIn ease-in;
+}
+
+.fadein-25s {
+    animation: 2.5s delayedFadeIn ease-in;
+}
+
+.fadein-5s {
+    animation: 5s delayedFadeIn ease-in;
+}
+
+@keyframes delayedFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
