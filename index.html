@@ -43,18 +43,17 @@
     </div>
 
 
-    <main>
-        <div class="big-divider"></div>
+    <main class="project-overview">
+        <hr />
 
-        <div id="projects" class="container col-xxl-8 px-4 py-5">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Projects</h1>
-        </div>
+        <h1 id="projects" class="display-5 fw-bold lh-1 mb-3 text-center">Projects</h1>
+
 
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="https://raw.githubusercontent.com/xarantolus/sensibleHub/master/.github/screenshots/shub-song.png" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
-                    <p>Screenshot of the song edit page</p>
+                    <p class="image-hint">Screenshot of the song edit page</p>
                 </div>
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Music Server</h2>
@@ -64,6 +63,8 @@
                     <a href="https://github.com/xarantolus/sensibleHub" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
             </div>
+
+            <hr />
 
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
@@ -75,25 +76,60 @@
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="https://raw.githubusercontent.com/xarantolus/Collect/master/img/screenshot-main.png" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
-                    <p>Screenshot of the main archive listing page</p>
+                    <p class="image-hint">Screenshot of the main archive listing page</p>
                 </div>
             </div>
 
+            <hr />
+
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-2 mb-3">Android customizations</h2>
+                    <h2 class="display-5 fw-bold lh-2 mb-3">Android Customizations</h2>
                     <p class="lead">backtap makes the fingerprint sensor more useful.</p>
-                    <p>This <a href="https://github.com/topjohnwu/Magisk" class="blendin-link">Magisk</a> module starts a custom program when booting an Android device. This programs listens for taps on the fingerprint sensor and converts the to clicks on a specified region of the screen.</p> 
-                    <p>In order to write signals to the screen, I needed to know how the Linux multitouch protocol that is used on Android works. I also wrote <a href="https://xarantolus.github.io/blog/how-to-tap-the-android-screen-from-the-underlying-linux-system" class="blendin-link">a blog post</a> with my findings.</p>
+                    <p>The <a href="https://github.com/topjohnwu/Magisk" class="blendin-link">Magisk</a> module starts a custom program when booting the Android device. This programs listens for taps on the fingerprint sensor and converts them to clicks on a specific region of the screen.</p>
+                    <p>To write signals to the screen, I needed to know how the Linux multitouch protocol works. I also wrote <a href="https://xarantolus.github.io/blog/how-to-tap-the-android-screen-from-the-underlying-linux-system" class="blendin-link">a blog post</a> with my findings.</p>
                     <a href="https://github.com/xarantolus/backtap" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+                    <a href="https://xarantolus.github.io/blog/how-to-tap-the-android-screen-from-the-underlying-linux-system" type="button" class="btn btn-secondary btn-lg">Read the blog post</a>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-2 mb-3">AdBlock filter lists</h2>
+                <hr class="hidden-hr">
+                <div class="col-lg-6 vertical-separator">
+                    <h2 class="display-5 fw-bold lh-2 mb-3">AdBlock Filterlists</h2>
                     <p class="lead">filtrite is a fully automated AdBlock filter list generator for Bromite.</p>
                     <p>The browser <a href="https://www.bromite.org/" class="blendin-link">Bromite</a> for Android allows custom AdBlock rules in a specified format. This program generates this type of file from an input of online blocklists.</p>
                     <p>In order to keep the generator up to date, I needed to compile parts of the Chromium project. This now happens every week on GitHub Actions in the fully automated <a href="https://github.com/xarantolus/subresource_filter_tools" class="blendin-link">subresource_filter_tools</a> repository.</p>
-
                     <a href="https://github.com/xarantolus/filtrite" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://raw.githubusercontent.com/xarantolus/gover/master/img/rover-front.jpg" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
+                    <p class="image-hint">A photo of the rover</p>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold lh-2 mb-3">Rover</h2>
+                    <p class="lead">gover is a simple web-controlled rover powered by a Raspberry Pi.</p>
+
+                    <p>This <a href="https://www.raspberrypi.org/" class="blendin-link">Raspberry Pi</a> powered rover can be controlled either via a keyboard, an Xbox controller or simply tilting a phone. It avoids frontal collisions using the ultrasonic sensor.</p>
+
+                    <a href="https://github.com/xarantolus/gover" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold lh-2 mb-3">VSCode extension</h2>
+                    <p class="lead">Supporting increased productivity in <a href="https://github.com/kammt/MemeAssembly" class="blendin-link">MemeAssembly</a>.</p>
+                    <p>While more of a fun project, writing an extension taught me how to define syntax highlighting and other developer productivity features in a single extension.</p>
+                    <a href="https://github.com/xarantolus/MemeAssembly-vscode" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://raw.githubusercontent.com/xarantolus/MemeAssembly-vscode/main/img/preview.gif" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
+                    <p class="image-hint">Using the extension to write a simple alphabet program</p>
                 </div>
             </div>
 

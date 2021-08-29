@@ -23,16 +23,30 @@ html {
     border-bottom-color: #fff;
 }
 
-.big-divider {
-    height: 1rem;
-    width: 100%;
-    background-color: #555555;
-}
-
 .blendin-link {
     color: #f0f0f0;
 }
 
 .blendin-link:hover {
     color: #ffffff;
+}
+
+.image-hint {
+    color: #dddddd;
+    text-align: center;
+}
+
+.project-overview {
+    text-align: left;
+}
+
+
+@media (min-width: 992px) {
+    .vertical-separator {
+        border-right: 1px solid #595C5F;
+    }
+
+    .hidden-hr {
+        display: none;
+    }
 }
