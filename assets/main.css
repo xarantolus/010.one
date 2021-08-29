@@ -40,12 +40,10 @@ html {
     text-align: left;
 }
 
-
 @media (min-width: 992px) {
     .vertical-separator {
         border-right: 1px solid #595C5F;
     }
-
     .hidden-hr {
         display: none;
     }
@@ -53,4 +51,8 @@ html {
 
 #projects {
     padding-top: 1em;
+}
+
+.text-left {
+    text-align: left;
 }
