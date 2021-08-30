@@ -63,21 +63,20 @@ a.btn:not(.btn-sm) {
 }
 
 .fadein-1s {
-    animation: 1s delayedFadeIn ease-in;
+    animation: .5s delayedFadeIn ease-in;
 }
 
-.fadein-25s {
-    animation: 2.5s delayedFadeIn ease-in;
+.fadein-15s {
+    animation: 1.5s delayedFadeIn ease-in;
 }
 
-.fadein-5s {
-    animation: 5s delayedFadeIn ease-in;
+.fadein-2s {
+    animation: 1.5s delayedFadeIn ease-in;
 }
 
 @keyframes delayedFadeIn {
     0% {
         opacity: 0;
-        transform: translateY(1em);
     }
     65% {
         opacity: 0;

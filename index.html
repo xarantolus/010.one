@@ -51,8 +51,8 @@
     <div>
         <div class="col-md-5 p-lg-5 mx-auto my-5 text-left">
             <h1 class="display-4 fw-normal text-center">Hi, I'm Philipp</h1>
-            <p class="lead fw-normal fadein-1s">I'm currently studying computer science. My side projects help me learn the practical stuff as well.
-            <div class="fadein-25s">
+            <div class="fadein-1s">
+                <p class="lead fw-normal">I'm currently studying computer science. My side projects help me learn the practical stuff as well.
                 <p class="lead">
                     I am interested in writing web server backends and the accompanying frontends, as well as lower-level software for Android or robotic applications. I also really like automating anything that has to be done more than a few times and experimenting with technology to see how it can be improved.</p>
 
@@ -70,24 +70,24 @@
     </div>
 
 
-    <main class="project-overview fadein-5s">
+    <main class="project-overview fadein-2s">
         <hr />
 
         <h1 id="projects" class="display-5 fw-bold lh-1 mb-3 text-center">Projects</h1>
 
 
         <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/sensibleHub/master/.github/screenshots/shub-song.png" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
-                    <p class="image-hint">Screenshot of the song edit page</p>
-                </div>
+            <div class="row align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Music Server</h2>
                     <p class="lead">sensibleHub is a self-hosted music management server.</p>
                     <p>It allows managing your music collection from any device and syncing using external programs. That way, you'll always have the latest files on all your devices.</p>
                     <p>The server backend is written in <a href="https://go.dev/" class="blendin-link">Go</a>, the front-end uses normal JavaScript and is mostly styled using the <a href="https://bulma.io/" class="blendin-link">Bulma CSS</a> framework. The server provides live updates video WebSockets, so any changes will be seen on all connected clients.</p>
                     <a href="https://github.com/xarantolus/sensibleHub" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://raw.githubusercontent.com/xarantolus/sensibleHub/master/.github/screenshots/shub-song.png" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
+                    <p class="image-hint">Screenshot of the song edit page</p>
                 </div>
             </div>
 
@@ -101,8 +101,8 @@
                     <p>The server backend is written in <a href="https://www.typescriptlang.org/" class="blendin-link">TypeScript</a>, the front-end is a single-page application written in vanilla JavaScript. It is styled using the <a href="https://getuikit.com/" class="blendin-link">UIkit CSS</a> framework. The server provides live updates via WebSockets, which means that any change will be propagated to all connected clients.</p>
                     <a href="https://github.com/xarantolus/Collect" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/Collect/master/img/screenshot-main.png" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
+                <div class="col-lg-6">
+                    <img src="https://raw.githubusercontent.com/xarantolus/Collect/master/img/screenshot-main.png" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
                     <p class="image-hint">Screenshot of the main archive listing page</p>
                 </div>
             </div>
@@ -130,11 +130,7 @@
 
             <hr />
 
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/gover/master/img/rover-front.jpg" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
-                    <p class="image-hint">A photo of the rover</p>
-                </div>
+            <div class="row align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">RC Rover</h2>
                     <p class="lead">gover is a remote-controlled rover powered by a Raspberry Pi.</p>
@@ -144,20 +140,24 @@
 
                     <a href="https://github.com/xarantolus/gover" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
+                <div class="col-lg-6">
+                    <img src="https://raw.githubusercontent.com/xarantolus/gover/master/img/rover-front.jpg" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
+                    <p class="image-hint">A photo of the rover</p>
+                </div>
             </div>
 
             <hr />
 
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-lg-6">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6 vertical-separator">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Sorting Images</h2>
                     <p class="lead">ImageSort is a desktop application for sorting images faster.</p>
-                    <p>The application asks you where your images are and where the selected ones should end up. It makes it easy to rotate and thus fix wrongly imported images.</p>
+                    <p>The program makes it easy to sort a large number of images and copy them wherever you want. It also makes it easy to rotate and thus fix images with incorrect rotation.</p>
 
                     <a href="https://github.com/xarantolus/ImageSort" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <hr class="hidden-hr">
-                <div class="col-lg-6 vertical-separator">
+                <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">File Server</h2>
                     <p class="lead">upduck makes it easy to share files beyond your local network.</p>
                     <p>It allows instant and secure sharing of files from your network to anyone in the world. It accomplishes that by integrating the dynamic DNS service <a href="https://www.duckdns.org" class="blendin-link">DuckDNS</a> and the <a href="https://letsencrypt.org/" class="blendin-link">Let's Encrypt</a> certificate authority, allowing HTTPS connections.</p>
@@ -175,16 +175,16 @@
                     <p>While more of a fun project, writing an extension taught me how to define syntax highlighting and other developer productivity features in a single extension.</p>
                     <a href="https://github.com/xarantolus/MemeAssembly-vscode" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/MemeAssembly-vscode/main/img/preview.gif" class="d-block mx-lg-auto img-fluid image-zoomable border border-info rounded-3" alt="sensibleHub project image">
+                <div class="col-lg-6">
+                    <img src="https://raw.githubusercontent.com/xarantolus/MemeAssembly-vscode/main/img/preview.gif" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
                     <p class="image-hint">Using the extension to write a simple alphabet program</p>
                 </div>
             </div>
 
             <hr />
 
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-lg-6">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6 align-top vertical-separator">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Starship Twitter Bot</h2>
                     <p class="lead">wenhopbot is a Twitter bot for Starship news.</p>
                     <p>This Twitter bot uses different methods to find tweets, news and other info about the <a href="https://www.spacex.com/vehicles/starship/" class="blendin-link">SpaceX Starship</a>. It also allows easy discovery of tweets around the launch and build site locations.</p>
@@ -193,10 +193,10 @@
                     <a href="https://twitter.com/wenhopbot" type="button" class="btn btn-secondary btn-lg">Twitter profile</a>
                 </div>
                 <hr class="hidden-hr">
-                <div class="col-lg-6 vertical-separator">
+                <div class="col-lg-6 align-top">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Politics Twitter Bot</h2>
                     <p class="lead">poliwiki highlights edits made to wiki articles about politicians.</p>
-                    <p>The bot watches a stream of german Wikipedia edits to articles of politicians and posts interesting changes to them.</p>
+                    <p>The bot posts screenshots of interesting edits to Wikipedia articles of german politicians. It does this by watching a stream of all changes and filtering accordingly.</p>
                     <a href="https://github.com/xarantolus/poliwiki" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                     <a href="https://twitter.com/politischeswiki" type="button" class="btn btn-secondary btn-lg">Twitter profile</a>
                 </div>
@@ -208,7 +208,7 @@
         <footer class="text-center p-3">
             Seems like you've seen everything there is for now.
 
-            You can either visit my <a class="btn btn-primary btn-sm" href="https://github.com/xarantolus">GitHub profile</a> to see more, <a class="btn btn-primary btn-sm" href="https://xarantolus.github.io/blog/">read something on my blog</a> or <a href="#home" type="button" class="btn btn-secondary btn-sm">scroll back up</a>.
+            You can either visit my <a class="btn btn-primary btn-sm m-1" href="https://github.com/xarantolus">GitHub profile</a> to see more, <a class="btn btn-primary btn-sm m-1" href="https://xarantolus.github.io/blog/">read something on my blog</a> or <a href="#home" type="button" class="btn btn-secondary btn-sm m-1">scroll back up</a>.
         </footer>
     </main>
 </body>
