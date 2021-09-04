@@ -60,7 +60,7 @@
                     <a href="https://github.com/xarantolus/sensibleHub" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/sensibleHub/master/.github/screenshots/shub-song.png" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
+                    <img src="https://raw.githubusercontent.com/xarantolus/sensibleHub/master/.github/screenshots/shub-song.png" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image showing the screen where you can edit a song">
                     <p class="image-hint">Screenshot of the song edit page</p>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <a href="https://github.com/xarantolus/Collect" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/Collect/master/img/screenshot-main.png" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
+                    <img src="https://raw.githubusercontent.com/xarantolus/Collect/master/img/screenshot-main.png" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="Collect project image showing the main archive listing page">
                     <p class="image-hint">Screenshot of the main archive listing page</p>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                     <a href="https://github.com/xarantolus/gover" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/gover/master/img/rover-front.jpg" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
+                    <img src="https://raw.githubusercontent.com/xarantolus/gover/master/img/rover-front.jpg" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="A photo of my rover">
                     <p class="image-hint">A photo of the rover</p>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                     <a href="https://github.com/xarantolus/MemeAssembly-vscode" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://raw.githubusercontent.com/xarantolus/MemeAssembly-vscode/main/img/preview.gif" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="sensibleHub project image">
+                    <img src="https://raw.githubusercontent.com/xarantolus/MemeAssembly-vscode/main/img/preview.gif" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="An animation showing how I programmed a small program in MemeAssembly">
                     <p class="image-hint">Using the extension to write a simple alphabet program</p>
                 </div>
             </div>
@@ -175,6 +175,30 @@
                     <a href="https://twitter.com/politischeswiki" type="button" class="btn btn-secondary btn-lg">Twitter profile</a>
                 </div>
             </div>
+
+            <hr />
+
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold lh-2 mb-3">Firefox Customizations</h2>
+                    <p class="lead">userchrome.css enhances the Firefox user interface.</p>
+
+                    <p>Firefox lets the user customize its user interface. That way, I could fix small annoyances and implement a few animations along the way.</p>
+
+                    <a href="https://github.com/xarantolus/userchrome.css" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <img src="https://raw.githubusercontent.com/xarantolus/userchrome.css/main/.github/screenshots/tabswitch.gif" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="A video showing how the tab switch looks like in action">
+                        <p class="image-hint">The tab switch animation</p>
+                    </div>
+                    <div>
+                        <img src="https://raw.githubusercontent.com/xarantolus/userchrome.css/main/.github/screenshots/urlbar.gif" class="d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="A video showing how URL bar buttons only show when hovered">
+                        <p class="image-hint">The search bar buttons are only displayed when hovering</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <hr>
@@ -188,6 +212,10 @@
 
     <script src="assets/extern/medium-zoom.min.js"></script>
     <script>
+        mediumZoom(".image-zoomable", {
+            background: "#242424",
+        });
+
         function registerSmoothScroll(link) {
             var links = [...document.querySelectorAll("a[href='" + link + "']")];
 
@@ -204,10 +232,6 @@
 
         registerSmoothScroll("#home")
         registerSmoothScroll("#projects")
-
-        mediumZoom(".image-zoomable", {
-            background: "#242424",
-        });
     </script>
 </body>
 
