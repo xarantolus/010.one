@@ -259,6 +259,74 @@
         registerSmoothScroll("#home")
         registerSmoothScroll("#projects")
     </script>
+
+
+    <script>
+        function scrollTo(element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+
+        const allowedOffset = 50;
+
+        function findNearestDown(selector, topElement) {
+            var elements = [topElement, ...document.querySelectorAll(selector)];
+
+            return elements[findNearestDownIndex(elements)];
+        }
+
+        function findNearestDownIndex(elements) {
+            var i = elements.findIndex(e => e.offsetTop - allowedOffset > window.scrollY);
+
+            return i < 0 ? (elements.length - 1) : i;
+        }
+
+        function findNearestUp(selector, topElement) {
+            // Find all visible separators
+            var elements = [...document.querySelectorAll(selector)].filter(e => e.offsetParent !== null);
+            elements.unshift(topElement);
+
+            var idx = findNearestDownIndex(elements) - 1;
+
+            if (idx < 1) {
+                return elements[0];
+            }
+
+            if (Math.abs(elements[idx].offsetTop - window.scrollY) < allowedOffset) {
+                return elements[idx - 1];
+            }
+
+            return elements[idx];
+        }
+
+        var isScrolling = false;
+
+        window.addEventListener('keydown', function (event) {
+            if (isScrolling) {
+                return;
+            }
+            isScrolling = true;
+
+            try {
+                switch (event.keyCode) {
+                    case 37:
+                    case 38:
+                        // Scroll to the previous element
+                        event.preventDefault();
+                        scrollTo(findNearestUp("hr", document.body))
+                        break;
+                    case 32:
+                    case 39:
+                    case 40:
+                        // Scroll to the next element
+                        event.preventDefault();
+                        scrollTo(findNearestDown("hr", document.body))
+                        break;
+                }
+            } catch (e) { }
+
+            isScrolling = false;
+        });
+    </script>
 </body>
 
 </html>
