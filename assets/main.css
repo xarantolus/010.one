@@ -45,6 +45,11 @@ html, body, .bg-dark {
     text-align: left;
 }
 
+.project-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 992px) {
     .vertical-separator {
         border-right: 1px solid #595C5F;
