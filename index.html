@@ -37,7 +37,7 @@
             <div class="fadein-1s">
                 <p class="lead fw-normal">I'm currently studying computer science. My side projects help me learn the practical stuff as well.
                 <p class="lead">
-                    I am interested in writing web server backends and the accompanying frontends as well as building and writing software for robots.
+                    I am interested in writing web server backends and the accompanying frontends as well as building robots controlled by software.
                     I've also recently gotten into app development for Android.
                     Another thing I really like is automating anything that has to be done more than a few times.</p>
 
@@ -84,7 +84,7 @@
                     <h2 class="display-5 fw-bold lh-2 mb-3">Web Archive Server</h2>
                     <p class="lead">Collect is a self-hosted web archive.</p>
                     <p>Your personal web archive that supports downloading normal websites and videos. When a webpage goes offline or is deleted, you can still view it.</p>
-                    <p>The server backend is written in <a href="https://www.typescriptlang.org/" class="blendin-link">TypeScript</a>, the front-end is a single-page application written in vanilla JavaScript. It is styled using the <a href="https://getuikit.com/" class="blendin-link">UIkit CSS</a> framework. The server provides live updates via WebSockets, which means that any change will be propagated to all connected clients.</p>
+                    <p>The server backend is written in <a href="https://www.typescriptlang.org/" class="blendin-link">TypeScript</a> and runs using <a href="https://nodejs.org/en/" class="blendin-link">Node.JS</a>, the front-end is a single-page application written in vanilla JavaScript. It is styled using the <a href="https://getuikit.com/" class="blendin-link">UIkit CSS</a> framework. The server provides live updates via WebSockets, which means that any change will be propagated to all connected clients.</p>
                     <a href="https://github.com/xarantolus/Collect" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <div class="col-lg-6">
@@ -97,7 +97,7 @@
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Note Taking App</h2>
                     <p class="lead">Notality is a note taking app for Android.</p>
-                    <p>It's quite a basic note taking app and allows you to create, edit and delete notes. It switches to light or dark mode depending on the system settings and is localized for English and German.</p>
+                    <p>It's quite a basic note taking app that allows you to create, edit and delete notes. It switches to light or dark mode depending on the system settings and is localized for English and German.</p>
                     <p>The app is written in <a href="https://dart.dev" class="blendin-link">Dart</a> and uses the <a href="https://flutter.dev" class="blendin-link">Flutter</a> framework. One <em>could</em> build it for iOS from the same source code, but I haven't done that.</p>
                     <a href="https://github.com/xarantolus/notality" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
@@ -129,7 +129,7 @@
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Android Customizations</h2>
                     <p class="lead">backtap makes your phone's fingerprint sensor more useful.</p>
-                    <p>The <a href="https://github.com/topjohnwu/Magisk" class="blendin-link">Magisk</a> module starts a custom program when booting the Android device. This program listens for taps on the fingerprint sensor and converts them to clicks on a specific region of the screen.</p>
+                    <p>The <a href="https://github.com/topjohnwu/Magisk" class="blendin-link">Magisk</a> module starts a custom program when booting an Android device. This program listens for taps on the fingerprint sensor and converts them to clicks on a specific region of the screen.</p>
                     <p>To write signals to the screen, I needed to know how the Linux multitouch protocol works. I also wrote a blog post with my findings.</p>
                     <a href="https://github.com/xarantolus/backtap" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                     <a href="https://blog.010.one/how-to-tap-the-android-screen-from-the-underlying-linux-system" type="button" class="btn btn-secondary btn-lg">Read the blog post</a>
@@ -151,7 +151,7 @@
                     <h2 class="display-5 fw-bold lh-2 mb-3">RC Rover</h2>
                     <p class="lead">gover is a remote-controlled rover powered by a Raspberry Pi.</p>
 
-                    <p>This <a href="https://www.raspberrypi.org/" class="blendin-link">Raspberry Pi</a> powered rover can be controlled either via a keyboard, an Xbox controller or simply tilting a phone. It avoids frontal collisions using the ultrasonic sensor.</p>
+                    <p>This <a href="https://www.raspberrypi.org/" class="blendin-link">Raspberry Pi</a> powered rover can be controlled either via a keyboard, an Xbox controller or simply by tilting a phone. It avoids frontal collisions using the ultrasonic sensor.</p>
                     <p>I learned a lot about electronics, e.g. how to wire and solder the motor controller board. And writing software that actually affects the real world is really cool.</p>
 
                     <a href="https://github.com/xarantolus/gover" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
@@ -169,8 +169,7 @@
                     <h2 class="display-5 fw-bold lh-2 mb-3">Sorting Images</h2>
                     <p class="lead">ImageSort is a desktop application for sorting images faster.</p>
                     <p>The program makes it easy to sort a large number of images and copy them wherever you want. It also allows you to rotate and thus fix images with incorrect orientation.<br />
-                        This <span title="Windows Presentation Foundation">WPF application</span> is written in C# and runs on Windows.</p>
-
+                        This <a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation" class="blendin-link" title="Windows Presentation Foundation">WPF</a> application is written in <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" class="blendin-link">C#</a> and runs on Windows.</p>
                     <a href="https://github.com/xarantolus/ImageSort" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                 </div>
                 <hr class="hidden-hr">
@@ -204,7 +203,8 @@
                 <div class="col-lg-6 align-top vertical-separator">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Starship Twitter Bot</h2>
                     <p class="lead">wenhopbot is a Twitter bot for Starship news.</p>
-                    <p>This Twitter bot uses different methods to find tweets, news and other info about the <a href="https://www.spacex.com/vehicles/starship/" class="blendin-link">SpaceX Starship</a>. It also allows easy discovery of tweets around the launch and build site locations.</p>
+                    <p>This Twitter bot uses different methods to find tweets, news and other information about the <a href="https://www.spacex.com/vehicles/starship/" class="blendin-link">SpaceX Starship</a>.
+                        Additionally, it watches tweets around the launch and build site locations that are tagged with a location.</p>
 
                     <a href="https://github.com/xarantolus/spacex-hop-bot" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
                     <a href="https://twitter.com/wenhopbot" type="button" class="btn btn-secondary btn-lg">Twitter profile</a>
