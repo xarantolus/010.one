@@ -326,14 +326,16 @@
                 switch (event.keyCode) {
                     case 37:
                     case 38:
-                        // Scroll to the previous element
+                    case 75:
+                        // Arrow left, arrow up and 'k' scroll to the previous element
                         event.preventDefault();
                         scrollTo(findNearestUp("hr", document.body))
                         break;
                     case 32:
                     case 39:
                     case 40:
-                        // Scroll to the next element
+                    case 74:
+                        // Space, arrow right, arrow down or 'j' scroll to the next element
                         event.preventDefault();
                         scrollTo(findNearestDown("hr", document.body))
                         break;
