@@ -93,7 +93,8 @@
                 </div>
             </div>
 
-            <hr /><div class="row align-items-center g-5 py-5">
+            <hr />
+            <div class="row align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h2 class="display-5 fw-bold lh-2 mb-3">Note Taking App</h2>
                     <p class="lead">Notality is a note taking app for Android.</p>
@@ -106,7 +107,7 @@
                     <p class="image-hint">Screenshot of the note listing page in dark mode</p>
                 </div>
             </div>
-            
+
             <hr />
 
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -122,7 +123,7 @@
                     <p class="image-hint">Screenshot of launch listing page in dark mode</p>
                 </div>
             </div>
-            
+
             <hr />
 
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -253,31 +254,6 @@
         </footer>
     </main>
 
-    <script src="assets/extern/medium-zoom.min.js"></script>
-    <script>
-        mediumZoom(".image-zoomable", {
-            background: "#242424",
-        });
-
-        function registerSmoothScroll(link) {
-            var links = [...document.querySelectorAll("a[href='" + link + "']")];
-
-            links.forEach(function (elem) {
-                elem.addEventListener('click', function (ev) {
-                    ev.preventDefault();
-
-                    document.querySelector(link).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                })
-            })
-        }
-
-        registerSmoothScroll("#home")
-        registerSmoothScroll("#projects")
-    </script>
-
-
     <script>
         function scrollTo(element) {
             element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
@@ -342,6 +318,31 @@
             } catch (e) { }
 
             isScrolling = false;
+        });
+
+
+        function registerSmoothScroll(link) {
+            var links = [...document.querySelectorAll("a[href='" + link + "']")];
+
+            links.forEach(function (elem) {
+                elem.addEventListener('click', function (ev) {
+                    ev.preventDefault();
+
+                    document.querySelector(link).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                })
+            })
+        }
+
+        registerSmoothScroll("#home")
+        registerSmoothScroll("#projects")
+    </script>
+
+    <script src="assets/extern/medium-zoom.min.js"></script>
+    <script>
+        mediumZoom(".image-zoomable", {
+            background: "#242424",
         });
     </script>
 </body>
