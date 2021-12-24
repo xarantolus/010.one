@@ -50,33 +50,12 @@ html, body, .bg-dark {
     margin-right: auto;
 }
 
-
-.yamz__img-wrapper>img {
-    padding: 0 96px !important;
-}
-
-.yamz__img-wrapper {
-    margin: 0 96px !important;
-}
-
-
-
 @media (min-width: 992px) {
     .vertical-separator {
         border-right: 1px solid #595C5F;
     }
-
     .hidden-hr {
         display: none;
-    }
-
-
-    .yamz__img-wrapper>img {
-        padding: 0 24px;
-    }
-
-    .yamz__img-wrapper {
-        margin: 0 24px;
     }
 }
 
@@ -104,20 +83,13 @@ a.btn:not(.btn-sm) {
     animation: 1.5s delayedFadeIn ease-in;
 }
 
-.hidden-gallery {
-    display: none !important;
-    height: 0 !important;
-}
-
 @keyframes delayedFadeIn {
     0% {
         opacity: 0;
     }
-
     65% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
