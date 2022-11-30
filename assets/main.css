@@ -76,32 +76,6 @@ a.btn:not(.btn-sm) {
     margin-top: .5em;
 }
 
-.fadein-1s {
-    animation: .5s delayedFadeIn ease-in;
-}
-
-.fadein-15s {
-    animation: 1.5s delayedFadeIn ease-in;
-}
-
-.fadein-2s {
-    animation: 1.5s delayedFadeIn ease-in;
-}
-
-@keyframes delayedFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    65% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .table {
     color: #eee !important;
 }

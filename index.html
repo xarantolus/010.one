@@ -47,6 +47,7 @@
 			<nav class="nav nav-masthead justify-content-center float-md-end">
 				<a class="nav-link active" aria-current="page" href="#home">Home</a>
 				<a class="nav-link" href="#projects">Projects</a>
+				<a class="nav-link" href="#hackathons">Hackathons</a>
 				<a class="nav-link" href="https://blog.010.one">Blog</a>
 			</nav>
 		</div>
@@ -54,7 +55,7 @@
 
 	<div class="col-md-5 p-lg-5 mx-auto my-5 text-left">
 		<h1 class="display-4 fw-normal text-center">Hi, I'm Philipp.</h1>
-		<div class="fadein-1s lead">
+		<div class="lead">
 			<p class="fw-normal">I'm currently studying computer science at the <a class="link-light" href="https://www.tum.de/">Technical University of Munich</a>.
 			<p>Things I'm interested in:</p>
 			<ul>
@@ -72,11 +73,13 @@
 				or <a class="link-light" href="https://stackoverflow.com/users/5728357/xarantolus?tab=profile">StackOverflow</a>.
 				You can also find me on <a class="link-light" href="https://www.linkedin.com/in/erhardt-philipp">LinkedIn</a>.
 			</p>
+
+			<p>I have also participated in two hackathons, you can find more info below.</p>
 		</div>
 	</div>
 
 
-	<main class="project-overview fadein-2s">
+	<main class="project-overview">
 		<hr />
 
 		<h1 id="projects" class="display-5 fw-bold lh-1 mb-3 text-center">Projects</h1>
@@ -419,6 +422,56 @@
 
 		<hr>
 
+
+		<h1 id="hackathons" class="display-5 fw-bold lh-1 mb-3 text-center">Hackathons</h1>
+
+		<div class="container col-xxl-8 px-4 py-5">
+			<div class="row align-items-center g-5 py-5">
+				<div class="col-lg-6">
+					<div class="text-end">
+						<span title="November 2021" class="badge rounded-pill bg-opacity-50 bg-info">November 2021</span>
+					</div>
+
+					<h2 class="display-5 fw-bold lh-2 mb-3">hackaTUM 2021</h2>
+					<p class="lead">I participated in the online <a class="blendin-link" href="https://hack.tum.de/">hackaTUM 2021</a>, the official hackathon of the Department of Computer Science of the Technical University of Munich.</p>
+
+					<p>
+						Our team of four people developed a quiz app using Flutter, including a backend and other tools to analyze data from the City of Munich Open Data portal. This took about 40 hours of working together and having fun!
+					</p>
+					<a href="https://devpost.com/software/datenteam" type="button" class="btn btn-primary btn-lg">Devpost Submission</a>
+				</div>
+				<div class="col-lg-6">
+					<img src="https://raw.githubusercontent.com/nerotyc/mucquiz_app/main/.github/screenshots/topic-overview.jpg" class="project-image d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="A screenshot of our app">
+					<p class="image-hint">A photo showing our app</p>
+				</div>
+			</div>
+
+			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+				<div class="col-lg-6">
+					<div class="text-end">
+						<span title="November 2021" class="badge rounded-pill bg-opacity-50 bg-info">November 2022</span>
+					</div>
+
+					<h2 class="display-5 fw-bold lh-2 mb-3">hackaTUM 2022</h2>
+					<p class="lead">I also participated in the in-person <a class="blendin-link" href="https://hack.tum.de/">hackaTUM 2022</a>.</p>
+
+					<p>
+						Now with another team of four people we developed a web app that helps people find movies and shows they are both interested in.
+						An user can just share an invite link with a friend and the app will show them movies and shows they will both like.
+						No more infinite scrolling through endless choices, just send the link and get started!
+					</p>
+					<p>We used Vue.js for the frontend and wrote a custom Go backend using <a href="https://pocketbase.io/" class="blendin-link">PocketBase</a>.</p>
+					<a href="https://devpost.com/software/what2watch-z1ksw6" type="button" class="btn btn-primary btn-lg">Devpost Submission</a>
+				</div>
+				<div class="col-lg-6">
+					<img src="https://raw.githubusercontent.com/xarantolus/what2watch-frontend/main/img/homepage.png" class="project-image d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="A screenshot of our app">
+					<p class="image-hint">A screenshot of our app</p>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
 		<h1 id="other-stuff" class="display-5 fw-bold lh-1 mb-3 text-center">Other Stuff</h1>
 
 		<div class="container col-xxl-8 px-4 py-5">
@@ -454,8 +507,6 @@
 				</table>
 			</div>
 		</div>
-
-		<!-- TODO: Add hackatons after Nov. 2022 -->
 
 
 		<hr>
@@ -550,8 +601,9 @@
 			})
 		}
 
-		registerSmoothScroll("#home")
-		registerSmoothScroll("#projects")
+		registerSmoothScroll("#home");
+		registerSmoothScroll("#projects");
+		registerSmoothScroll("#hackathons");
 	</script>
 
 	<script src="assets/extern/medium-zoom.min.js"></script>
