@@ -85,3 +85,7 @@ a.btn:not(.btn-sm) {
     color: #eee !important;
 
 }
+
+.center {
+    margin: 0 auto;
+}
