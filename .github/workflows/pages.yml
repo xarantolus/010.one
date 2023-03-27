@@ -34,8 +34,16 @@ jobs:
         uses: dsaltares/fetch-gh-release-asset@1.1.0
         with:
           repo: xarantolus/CV
-          file: CV-censored.pdf
-          target: CV-censored.pdf
+          file: CV-de-censored.pdf
+          target: CV-de-censored.pdf
+          token: ${{ secrets.CV_REPO_TOKEN }}
+
+      - name: Download CV
+        uses: dsaltares/fetch-gh-release-asset@1.1.0
+        with:
+          repo: xarantolus/CV
+          file: CV-en-censored.pdf
+          target: CV-en-censored.pdf
           token: ${{ secrets.CV_REPO_TOKEN }}
 
       - name: Upload artifact
