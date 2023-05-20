@@ -2,45 +2,6 @@
 <html lang="en">
 
 <head>
-	<script>
-		var amogus = `
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⡟⠛⠉⠉⠉⠀⠁⠀⡀⠀⠁⠉⠉⠉⠙⠛⠻⢿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡿⠃⠀⢀⠂⠄⠡⠈⠄⠁⠄⠈⠄⠈⠄⠈⠄⠠⠀⡀⠘⠿⣷⡄⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡿⠁⠀⡐⠠⠀⠌⠀⠁⠈⢀⠈⠄⠈⢀⠈⢀⠈⠠⠁⠠⠀⡀⠙⣿⣆⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡿⠁⢀⠐⠀⡀⠄⠠⣈⣠⣥⣴⣴⣶⣾⣦⣴⣤⣄⡂⠐⠀⡁⠠⠀⠈⣿⣆⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠃⠀⠂⠀⠄⣠⣶⣿⡿⢟⡛⢏⠋⠀⠀⠈⠉⢻⢻⢿⣧⡀⠀⡐⠀⠁⠘⣿⡆⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡏⠀⠂⢁⠠⢲⣿⣿⣯⣜⠦⣙⠬⣓⠢⠤⢤⠠⣎⢣⠺⣿⣿⠀⢀⠂⠁⠠⢹⣿⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠉⠀⡐⠀⠄⠘⣿⣿⣿⣿⣷⣷⣾⣴⣯⣵⣯⣶⣼⣶⣿⣿⠉⠀⢀⠂⡈⠀⠄⣿⣇⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡏⠀⡐⠀⠂⠈⢀⠀⠙⠛⠿⠿⠿⠿⣿⣿⣿⣿⠿⠿⠟⠛⠁⢀⠈⡀⠐⢀⠀⠂⠸⣿⡀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠉⠀⢀⠐⠈⠀⠂⡀⠌⠀⠄⠠⠀⡀⠀⠀⠀⢀⠀⡀⠄⢀⠂⢀⠐⠀⠐⠀⡀⠂⠄⣿⡇⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡏⠀⢈⠀⠄⠈⠄⠁⡀⠄⠈⡀⠂⠄⡀⠡⠈⠠⠀⠄⠠⠐⢀⠐⠀⠄⠈⠄⠁⠠⠀⠂⢸⣿⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠓⠈⠀⠄⠈⠄⠀⡁⠄⠠⠁⠄⠈⠄⠠⠀⠡⠀⠌⠠⠐⠈⠠⠀⠡⠀⠡⠀⠌⠀⡁⠐⢈⣿⡄⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡿⠀⠐⠈⠠⠁⠄⠡⠀⠄⠁⠄⠈⠄⠈⠄⠡⠀⠌⠠⠀⠡⠈⠄⠡⠀⠡⠀⠡⠈⠄⠀⠡⠀⣿⡇⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡗⠀⠌⠠⠁⠠⠈⢀⠐⠈⠀⠌⠠⠈⠄⠈⠄⠈⠀⠄⠈⠄⠈⠠⠀⠡⠀⠡⠀⠐⠈⢀⠁⠄⣻⡇⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠁⢠⠘⠀⡄⠃⡀⠎⠀⡜⠀⡄⠃⡄⢠⠃⡀⡜⢀⠘⢠⠘⢠⠃⢘⢠⠘⢀⠘⢀⠃⢨⠀⡄⢹⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣏⢠⠰⠘⢠⠘⡀⡅⡀⠃⡄⡘⢀⠆⡄⢃⠀⡅⢀⠎⢀⠆⢘⢠⠘⡈⢀⠆⡈⠆⡈⠆⠰⡀⠆⢸⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠋⢀⠠⠐⠠⠀⠡⠀⠁⠄⠠⠁⠌⠀⠄⠈⠄⠠⠈⠠⠈⠠⠈⠠⠀⠡⠈⢀⠡⠀⠁⠄⠂⠁⠠⢸⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡿⠀⠠⠀⠌⠀⠡⠀⠡⠈⠄⠁⠄⠈⠄⠈⠄⠈⠄⠈⠄⠈⠄⠡⠀⠡⠀⠡⠀⠄⠁⠌⠠⠁⠌⠀⢸⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠗⠀⠠⠁⠈⠠⠁⠈⠄⠐⠀⢁⠈⠄⠈⠄⠈⠄⠈⠄⠈⠠⠈⠠⠈⠠⠁⠠⠁⠠⠈⠀⠄⠐⠀⠡⢀⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠂⠈⠠⠈⠠⠁⠈⠠⠐⠈⠀⠄⠠⠈⠄⠈⠄⠀⡁⠠⠈⠀⠄⠁⡈⠠⠈⢀⠈⠠⠀⢁⠈⢀⠡⠀⡀⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡇⠀⠂⢁⠐⠠⠈⠐⢀⠐⠀⠁⠠⠀⢄⡐⣀⣠⣁⡀⠄⠀⡁⠀⢂⠠⠐⠈⡀⠐⡀⢈⠀⠄⠂⡀⠐⠀⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⠋⠀⢂⠀⢂⠐⡈⠀⠄⢀⣾⡿⠿⠿⠿⠟⠛⠛⠛⠻⠿⢷⣧⡀⠄⠀⢂⠐⡀⠂⡐⠀⠂⡐⢀⠠⠈⠀⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡿⠁⢈⠀⡐⢀⠂⠐⠀⡀⣾⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⡤⠈⢀⠐⠀⢂⠀⢂⠐⠀⠂⡀⠂⠁⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠧⠀⢀⠂⠀⠄⠐⡀⠁⢀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡏⠀⡀⢂⠈⢀⠀⠂⡀⠌⢀⠠⠐⠀⣿⡇
-⠀⠀⠀⠀⠀⠀⢀⣤⣶⡶⠿⠿⢷⢶⣶⣾⣿⠄⠐⠀⠐⠈⠐⢀⠀⠌⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠐⠀⡀⠐⢀⠐⠀⡀⠄⠂⢀⠐⠈⣿⡇
-⠀⠀⠀⠀⠀⢰⡿⠏⠁⠀⡀⠄⠀⡀⠀⠹⠓⠀⠠⠈⠄⠁⠌⠀⠄⠀⠂⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣷⠈⠀⠐⠈⠀⠄⠂⠠⠀⠂⠄⠠⢈⣿⠀
-⠀⠀⠀⠀⠀⢿⡧⣀⠀⠁⡀⠌⠠⠀⠡⠀⠄⠐⠠⠁⠈⠄⠈⠠⠐⢈⣴⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⠃⢀⠈⠄⠡⠈⠄⠠⠁⠄⠡⠀⠂⢸⣿⠀
-⠀⠀⠀⠀⠀⠀⠈⠿⣦⣦⣰⡀⢀⠄⠐⠀⠄⠂⠠⠀⠂⠁⢠⣈⣄⣴⣾⠟⠁⠀⠀⠀⠀⠀⠀⢀⣴⣶⠿⠿⠟⠻⠁⢀⠠⠈⠠⠀⠡⠀⠁⠄⠈⠄⠁⠐⣸⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠻⠿⠿⠿⠿⣶⣷⣶⣷⠿⠿⠿⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⣴⡿⠋⠈⠀⡀⠠⠀⠄⠂⠠⠈⠠⠁⠠⠁⠈⢀⠁⠠⠈⢀⣼⡏⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⡀⠂⠁⠀⠄⠐⢀⠈⠠⠈⢀⠈⠀⠄⠁⡀⢀⢂⣰⣶⡿⠁⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣦⣡⡀⡁⠀⠂⢀⠐⠀⡐⠀⠠⣈⣀⣴⣶⣾⠿⠛⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⣶⣷⣷⡷⠿⠿⠿⠿⠟⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀
-
-`
-		console.log(amogus)
-		setInterval(function () { console.log(amogus) }, 10000);
-	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,6 +89,29 @@
 
 		<div class="container col-xxl-8 px-4 py-5">
 			<div class="row align-items-center g-5 py-5">
+				<div class="col-lg-8 center">
+					<div class="text-end">
+						<span title="Started in 2022" class="badge rounded-pill bg-opacity-50 bg-info">2022 - ongoing</span>
+					</div>
+					<h2 class="display-5 fw-bold lh-2 mb-3">x86 Emulator</h2>
+					<p class="lead">AX can run real machine code right in your browser.</p>
+					<p>
+						This x86-64 emulator written in Rust decodes machine code using the <a href="https://crates.io/crates/iced-x86" class="blendin-link">iced-x86 crate</a> and then emulates the execution of these instructions. It supports some of the the most common x86-64 instructions, allowing it to execute some ELF/Linux binaries without modification.
+					</p>
+					<p>
+						This emulator is also used in the <a href="https://memeasm.010.one" class="blendin-link">MemeAssembly Playground</a>, which allows you to run a meme programming language that compiles to x86-64 instructions right in your browser.
+					</p>
+					<p>
+						Thousands of tests ensure the accuracy of the emulator. To get these test cases, a script runs instructions on real hardware and extracts the change of processor state into ready-to-use test cases.
+					</p>
+					<a href="https://github.com/xarantolus/ax" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
+					<a href="https://ax.010.one" type="button" class="btn btn-secondary btn-lg">Try online</a>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="row align-items-center g-5 py-5">
 				<div class="col-lg-6">
 					<div class="text-end">
 						<span title="Started 2020 and is still maintained" class="badge rounded-pill bg-opacity-50 bg-info">2020 - ongoing</span>
@@ -162,29 +146,6 @@
 				<div class="col-lg-6">
 					<img style="max-height: 50vh;" src="https://raw.githubusercontent.com/xarantolus/rockit/main/.github/screenshots/d-launches.jpg" class="project-image d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="rockit project image showing a list of rocket launches">
 					<p class="image-hint">Screenshot of the launch listing page in dark mode</p>
-				</div>
-			</div>
-
-			<hr />
-
-			<div class="row align-items-center g-5 py-5">
-				<div class="col-lg-8 center">
-					<div class="text-end">
-						<span title="Started in 2022" class="badge rounded-pill bg-opacity-50 bg-info">2022 - ongoing</span>
-					</div>
-					<h2 class="display-5 fw-bold lh-2 mb-3">x86 Emulator</h2>
-					<p class="lead">AX can run real machine code right in your browser.</p>
-					<p>
-						This x86-64 emulator written in Rust decodes machine code using the <a href="https://crates.io/crates/iced-x86" class="blendin-link">iced-x86 crate</a> and then emulates the execution of these instructions. It supports some of the the most common x86-64 instructions, allowing it to execute some ELF/Linux binaries without modification.
-					</p>
-					<p>
-						This emulator is also used in the <a href="https://memeasm.010.one" class="blendin-link">MemeAssembly Playground</a>, which allows you to run a meme programming language that compiles to x86-64 instructions right in your browser.
-					</p>
-					<p>
-						Thousands of tests ensure the accuracy of the emulator. To get these test cases, a script runs instructions on real hardware and extracts the change of processor state into ready-to-use test cases.
-					</p>
-					<a href="https://github.com/xarantolus/ax" type="button" class="btn btn-primary btn-lg">GitHub repository</a>
-					<a href="https://ax.010.one" type="button" class="btn btn-secondary btn-lg">Try online</a>
 				</div>
 			</div>
 
@@ -301,7 +262,6 @@
 								.nb {
 									color: orange;
 								}
-
 							</style>
 							<pre class="highlight"><code><span class="nv">$ </span>jsonx <span class="s2">"https://www.youtube.com/watch?v=-Oox2w5sMcA"</span> videoId title channelId | jq
 <span class="o">{</span>
