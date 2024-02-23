@@ -46,10 +46,15 @@ jobs:
           target: CV-en-censored.pdf
           token: ${{ secrets.CV_REPO_TOKEN }}
 
+      - name: Optimize Images
+        run: |
+          python3 -m pip install -r requirements.txt
+          python3 opt.py -i . -o dist
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '.'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
