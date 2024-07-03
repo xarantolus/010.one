@@ -65,7 +65,7 @@
 				<li>Cool space stuff (embedded development in a space-focused student club at TUM)</li>
 			</ul>
 
-			<p>I have also participated in three hackathons, you can find more info below.</p>
+			<p>I have also participated in four hackathons, you can find more info below.</p>
 
 			<div class="row justify-content-center pt-2">
 				<style>
@@ -452,7 +452,7 @@
 						<span title="November 2023" class="badge rounded-pill bg-opacity-50 bg-info">November 2023</span>
 					</div>
 
-					<h2 class="display-5 fw-bold lh-2 mb-3">hackaTUM 2023</h2>
+					<h2 class="display-5 fw-bold lh-2 mb-3">hackaTUM 2023 👑</h2>
 					<p class="lead">My team won the Check24 challenge in <a class="blendin-link" href="https://hack.tum.de/">hackaTUM 2023</a>, the official hackathon of the Department of Computer Science of the Technical University of Munich.</p>
 
 					<p>
@@ -566,70 +566,6 @@
 		function scrollTo(element) {
 			element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 		}
-
-		const allowedOffset = 50;
-
-		function findNearestDown(selector, topElement) {
-			var elements = [topElement, ...document.querySelectorAll(selector)];
-
-			return elements[findNearestDownIndex(elements)];
-		}
-
-		function findNearestDownIndex(elements) {
-			var i = elements.findIndex(e => e.offsetTop - allowedOffset > window.scrollY);
-
-			return i < 0 ? (elements.length - 1) : i;
-		}
-
-		function findNearestUp(selector, topElement) {
-			// Find all visible separators
-			var elements = [...document.querySelectorAll(selector)].filter(e => e.offsetParent !== null);
-			elements.unshift(topElement);
-
-			var idx = findNearestDownIndex(elements) - 1;
-
-			if (idx < 1) {
-				return elements[0];
-			}
-
-			if (Math.abs(elements[idx].offsetTop - window.scrollY) < allowedOffset) {
-				return elements[idx - 1];
-			}
-
-			return elements[idx];
-		}
-
-		var isScrolling = false;
-
-		window.addEventListener('keydown', function (event) {
-			if (isScrolling) {
-				return;
-			}
-			isScrolling = true;
-
-			try {
-				switch (event.keyCode) {
-					case 37:
-					case 38:
-					case 75:
-						// Arrow left, arrow up and 'k' scroll to the previous element
-						event.preventDefault();
-						scrollTo(findNearestUp("hr", document.body))
-						break;
-					case 32:
-					case 39:
-					case 40:
-					case 74:
-						// Space, arrow right, arrow down or 'j' scroll to the next element
-						event.preventDefault();
-						scrollTo(findNearestDown("hr", document.body))
-						break;
-				}
-			} catch (e) { }
-
-			isScrolling = false;
-		});
-
 
 		function registerSmoothScroll(link) {
 			var links = [...document.querySelectorAll("a[href='" + link + "']")];
