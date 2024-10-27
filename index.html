@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>xarantolus - Projects</title>
+	<title>Philipp Erhardt - xarantolus - Projects</title>
 	<link rel="canonical" href="https://010.one" />
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -46,6 +46,7 @@
 			<h3 class="float-md-start mb-0">xarantolus</h3>
 			<nav class="nav nav-masthead justify-content-center float-md-end">
 				<a class="nav-link active" aria-current="page" href="#home">Home</a>
+				<a class="nav-link" href="#student-club">MOVE</a>
 				<a class="nav-link" href="#projects">Projects</a>
 				<a class="nav-link" href="#hackathons">Hackathons</a>
 				<a class="nav-link" href="https://blog.010.one">Blog</a>
@@ -56,16 +57,17 @@
 	<div class="col-md-5 p-lg-4 mx-auto my-5 text-left">
 		<h1 class="display-4 fw-normal text-center">Hi, I'm Philipp.</h1>
 		<div class="lead">
-			<p class="fw-normal">I'm currently studying Informatics (B.Sc.) at the <a class="link-light" href="https://www.tum.de/">Technical University of Munich</a>.</p>
-			<p>Interests:</p>
+			<p class="fw-normal">I study Informatics (M.Sc.) at the <a class="link-light" href="https://www.tum.de/">Technical University of Munich (TUM)</a>.</p>
+
+			<p>Interests and activities:</p>
 			<ul>
-				<li>Computer Architecture, Operating Systems and low-level programming</li>
-				<li>Building web servers, websites and mobile apps</li>
-				<li>Tinkering with electronics and embedded hardware (Raspberry Pi, STM32)</li>
-				<li>Cool space stuff (embedded development in a space-focused student club at TUM)</li>
+				<li>Building satellites at <a class="link-light" href="https://warr.de/">WARR e.V.</a>, a TUM student club.</li>
+				<li>I like computer architecture, operating systems, and low-level programming.</li>
+				<li>Tinkering with electronics and embedded hardware (Raspberry Pi, STM32).</li>
+				<li>Building web servers, websites, and mobile apps.</li>
 			</ul>
 
-			<p>I have also participated in four hackathons, you can find more info below.</p>
+			<p>I have participated in five hackathons so far, you can find more info below.</p>
 
 			<div class="row justify-content-center pt-2">
 				<style>
@@ -104,7 +106,7 @@
 		</div>
 
 		<div class="mt-4">
-			<p class="lead">Interested in learning more about my experience and skills? Download my CV in your preferred language!</p>
+			<p class="lead">Download my CV in English or German:</p>
 			<div class="text-center">
 				<a href="/CV-en-censored.pdf" class="btn btn-primary">Download English CV</a>
 				<a href="/CV-de-censored.pdf" class="btn btn-primary">Download German CV</a>
@@ -115,7 +117,70 @@
 	<main class="project-overview">
 		<hr />
 
-		<h1 id="projects" class="display-5 fw-bold lh-1 mb-3 text-center">Projects</h1>
+		<h1 id="student-club" class="display-5 fw-bold lh-1 mb-3 text-center">Student Club Experience</h1>
+
+		<div class="container col-xxl-10 px-4 py-5">
+			<div class="row align-items-center g-5 py-5">
+				<div class="col-lg-10 center">
+					<h2 class="display-5 text-center fw-bold lh-2 mb-3">Munich Orbital Verification Experiment</h2>
+					<p class="lead">As member of MOVE, part of <a href="https://warr.de" class="blendin-link">WARR e.V.</a> Student Club, I build satellite software and do public relations work.</p>
+
+					<div class="row align-items-center g-5 py-5">
+						<div class="col-lg-6">
+							<h3 class="display-6 fw-bold lh-2 mb">Software</h3>
+							<p class="lead">A radiation-tolerant STM32 bootloader for reliable embedded software updates.</p>
+							<p>In the MOVE software team, we develop software for all levels of the satellite technology stack.</p>
+
+							<h4 style="font-weight: 600;">Bootloader</h4>
+							<p>I contributed to the development of a bootloader in <a class="blendin-link" href="https://www.rust-lang.org/">Rust</a> that enables on-orbit satellite firmware updates. It is resilient against power failures at any point, and uses hardware features to detect radiation damage/bit flips.
+							</p>
+							<p>
+								One of my contributions is the handling of radiation damage, for which I <a href="https://blog.010.one/Dont-snipe-me-in-space-intentional-flash-corruption-for-stm32-microcontrollers" class="blendin-link">developed a tool</a> that intentionally corrupts flash memory. Additionally, I improved reliability through model checking and introducing hardware-in-the-loop (HIL) test scripts.
+							</p>
+
+							<h4 style="font-weight: 600;">Other contributions</h4>
+							<ul>
+								<li>Software preparation for stratospheric ballon launch, including minimal implementation of down-link communication using a LoRa® module</li>
+								<li>Smaller changes to MOVE's real-time operating system (RTOS) for satellites, written in <a href="https://isocpp.org/" class="blendin-link">C++</a>.</li>
+								<li>Tools that assist with operations, such as Python tools related to time tracking.</li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<img src="/assets/STONCS-Calibration.jpg" class="project-image d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="Sun sensor calibration for the board that will carry the bootloader to orbit">
+							<p class="image-hint">Sun sensor calibration for the board that will carry the bootloader to orbit</p>
+						</div>
+					</div>
+
+
+					<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+						<div class="col-lg-6">
+							<h3 class="display-6 fw-bold lh-2 mb">Public Relations</h3>
+
+							<p class="lead">Create videos, host livestreams and reach out to new members.</p>
+							<p>
+								As a member of the PR team for MOVE, I support outreach efforts for WARR by coordinating initiatives to gain new members, such as presenting our work in lectures to attract potential members.
+							</p>
+							<p>
+								I also film and edit content for our social media platforms. Additionally, I help to organize and host live streams for launch events.
+							</p>
+						</div>
+						<div class="col-lg-6">
+							<img style="max-height: 50vh;" src="assets/ballon-launch-moment.jpg" class="project-image d-block mx-lg-auto img-fluid image-zoomable rounded-2" alt="Moment after launch of a stratospheric ballon captured by my camera">
+							<p class="image-hint">Moment after launch of a stratospheric ballon captured by my camera</p>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<a href="https://warr.de/en/projects/move/" type="button" class="btn btn-primary btn-lg">More information about MOVE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<hr />
+
+		<h1 id="projects" class="display-5 fw-bold lh-1 mb-3 text-center">Programming Projects</h1>
 
 		<div class="container col-xxl-8 px-4 py-5">
 			<div class="row align-items-center g-5 py-5">
@@ -123,7 +188,7 @@
 					<h2 class="display-5 fw-bold lh-2 mb-3">x86 Emulator</h2>
 					<p class="lead">AX can run real machine code right in your browser.</p>
 					<p>
-						This x86-64 emulator written in Rust decodes machine code using the <a href="https://crates.io/crates/iced-x86" class="blendin-link">iced-x86 crate</a> and then emulates the execution of these instructions. It supports some of the the most common x86-64 instructions, allowing it to execute some ELF/Linux binaries in your browser without modification.
+						This x86-64 emulator written in <a class="blendin-link" href="https://www.rust-lang.org/">Rust</a> decodes machine code using the <a href="https://crates.io/crates/iced-x86" class="blendin-link">iced-x86 crate</a> and then emulates the execution of these instructions. It supports some of the the most common x86-64 instructions, allowing it to execute some ELF/Linux binaries in your browser without modification.
 					</p>
 					<p>
 						This emulator is also used in the <a href="https://memeasm.010.one" class="blendin-link">MemeAssembly Playground</a>, which allows you to run a meme programming language that compiles to x86-64 instructions right in your browser.
@@ -582,6 +647,7 @@
 		}
 
 		registerSmoothScroll("#home");
+		registerSmoothScroll("#student-club");
 		registerSmoothScroll("#projects");
 		registerSmoothScroll("#hackathons");
 	</script>
