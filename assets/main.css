@@ -1,91 +1,122 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
-html, body, .bg-dark {
-    background-color: #181a1b !important;
+html,
+body,
+.bg-dark {
+  background-color: #181a1b !important;
 }
 
 .nav-masthead .nav-link {
-    padding: .25rem 0;
-    font-weight: 700;
-    color: #f3f3f3;
-    background-color: transparent;
-    border-bottom: .25rem solid transparent;
+  padding: 0.75em 0;
+  font-weight: 700;
+  color: #f3f3f3;
+  border-bottom: 0.25em solid transparent;
 }
 
-.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
-    border-bottom-color: #c7c7c7;
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: #c7c7c7;
 }
 
-.nav-masthead .nav-link+.nav-link {
-    margin-left: 1rem;
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
 }
 
 .nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.social-text {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #fff;
+  text-align: center;
+}
+
+.social-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.blendin-link:hover .social-text {
+  color: #ccc;
+}
+.nav-masthead {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin-left: 0.25em;
+  background-color: #181a1b80;
 }
 
 .blendin-link {
-    color: #f0f0f0;
+  color: #f0f0f0;
 }
 
 .blendin-link:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .no-deco {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .image-hint {
-    margin-top: 1%;
-    color: #dddddd;
-    text-align: center;
+  margin-top: 1%;
+  color: #dddddd;
+  text-align: center;
 }
 
 .project-overview {
-    text-align: left;
+  text-align: left;
 }
 
 .project-image {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 992px) {
-    .vertical-separator {
-        border-right: 1px solid #595C5F;
-    }
+  .vertical-separator {
+    border-right: 1px solid #595c5f;
+  }
 
-    .hidden-hr {
-        display: none;
-    }
+  .hidden-hr {
+    display: none;
+  }
 }
 
-#projects, #student-club {
-    padding-top: 1em;
+#projects,
+#student-club {
+  padding-top: 1em;
 }
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 a.btn:not(.btn-sm) {
-    margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .table {
-    color: #eee !important;
+  color: #eee !important;
 }
 
-.table-hover>tbody>tr:hover {
-    --bs-table-accent-bg: #363636;
-    color: #eee !important;
-
+.table-hover > tbody > tr:hover {
+  --bs-table-accent-bg: #363636;
+  color: #eee !important;
 }
 
 .center {
-    margin: 0 auto;
+  margin: 0 auto;
 }
